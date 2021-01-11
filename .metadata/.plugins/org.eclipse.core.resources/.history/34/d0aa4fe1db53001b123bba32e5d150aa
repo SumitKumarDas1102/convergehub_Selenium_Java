@@ -1,0 +1,24 @@
+package ConvergHub_TestCases;
+
+import org.testng.annotations.BeforeMethod;
+
+import ConvergHub_Base.TestBase;
+import ConvergHub_Pages.DashboaardPage;
+import ConvergHub_Pages.LoginPage;
+
+public class DashboardPageTest extends TestBase{
+	LoginPage lp;
+	DashboaardPage dp;
+	
+	public DashboardPageTest() {
+		super();
+	}
+	
+	@BeforeMethod
+	public void setUp() {
+		initialization();
+		lp = new LoginPage();
+	}
+	
+
+}

@@ -1,0 +1,23 @@
+package ConvergHub_Pages;
+
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+import ConvergHub_Base.TestBase;
+
+public class NewLeadAddPage extends TestBase{
+	
+	@FindBy(xpath="//h1[contains(text(),'Add Lead')]")
+	WebElement headerText;
+	
+	@FindBy(xpath="//ul[@id='slider_ul_add']")
+	WebElement addHeaderMenuBar;
+	
+	for (int i = 1; i < links.size(); i++)
+	{
+	    System.out.println(links.get(i).getText());
+	}
+
+}

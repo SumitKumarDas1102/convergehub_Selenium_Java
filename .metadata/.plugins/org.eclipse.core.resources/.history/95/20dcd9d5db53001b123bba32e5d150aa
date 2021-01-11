@@ -1,0 +1,16 @@
+package ConvergHub_TestCases;
+
+import ConvergHub_Base.TestBase;
+import ConvergHub_Pages.DashboaardPage;
+import ConvergHub_Pages.LoginPage;
+
+public class DashboardPageTest extends TestBase{
+	LoginPage lp;
+	DashboaardPage dp;
+	
+	public DashboardPageTest() {
+		super();
+	}
+	
+
+}

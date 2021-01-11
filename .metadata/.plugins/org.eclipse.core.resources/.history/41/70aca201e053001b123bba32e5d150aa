@@ -1,0 +1,9 @@
+//Sales page URL showing as /leads - so named the class as LeadsPage 
+
+package ConvergHub_Pages;
+
+import ConvergHub_Base.TestBase;
+
+public class LeadsPage extends TestBase{
+
+}

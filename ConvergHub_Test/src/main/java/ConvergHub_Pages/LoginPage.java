@@ -9,16 +9,16 @@ import ConvergHub_Base.TestBase;
 public class LoginPage extends TestBase{
 
 	@FindBy(xpath="//img[@alt='ConvergeHub']")
-	WebElement ConvergHubLogo;
+	private WebElement ConvergHubLogo;
 	
 	@FindBy(xpath="//input[@id='username']")
-	WebElement userName;
+	private WebElement userName;
 	
 	@FindBy(xpath="//input[@id='password']")
-	WebElement password;
+	private WebElement password;
 	
 	@FindBy(xpath="//input[@id='loginb']")
-	WebElement loginButton;
+	private WebElement loginButton;
 	
 	
 	public LoginPage() {

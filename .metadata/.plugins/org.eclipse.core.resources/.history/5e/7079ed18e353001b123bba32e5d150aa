@@ -1,0 +1,24 @@
+//Sales page URL showing as /leads - so named the class as LeadsPage 
+
+package ConvergHub_Pages;
+
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
+import ConvergHub_Base.TestBase;
+
+public class LeadsPage extends TestBase{
+	
+	@FindAll(@FindBy(how = How.XPATH, using = "//tbody//style[@type='text/css']"))
+	List<WebElement> allLeads;
+	
+	for (WebElement webElement : allLeads) {
+        String name = webElement.getText();
+        System.out.println(name);
+    }
+	
+}

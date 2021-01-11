@@ -1,0 +1,7 @@
+testBrowser = Chrome
+applicationURL = https://app01.convergehub.com/
+
+userName = mumbamod@gmail.com
+userPassword = Gulai2020!
+
+chromeDriverPath = D:/QA_Work/POC/POC_Java/Selenium_ConvergHub/Driver/chromedriver_win32/chromedriver.exe

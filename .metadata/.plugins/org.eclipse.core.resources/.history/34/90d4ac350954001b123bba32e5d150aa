@@ -1,0 +1,7 @@
+testBrowser = Chrome
+applicationURL = https://app01.convergehub.com/
+
+userName = patitpaban@mailinator.com
+userPassword = Convergehub2020!
+
+chromeDriverPath = D:/QA_Work/POC/POC_Java/Selenium_ConvergHub/Driver/chromedriver_win32/chromedriver.exe

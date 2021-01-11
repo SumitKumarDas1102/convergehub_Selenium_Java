@@ -1,0 +1,27 @@
+//Sales page URL showing as /leads - so named the class as LeadsPage 
+
+package ConvergHub_Pages;
+
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+
+import ConvergHub_Base.TestBase;
+
+public class LeadsPage extends TestBase{
+	
+	@FindBy(xpath="//a[contains(text(),'+ New')]")
+	WebElement addNewLead;
+	
+	public boolean isAddNewButtonVisible() {
+		return addNewLead.isDisplayed();
+	}
+	
+	public NewLeadAddPage clickOnAddNewButton() {
+		addNewLead.click();
+		return new NewLeadAddPage();
+	}
+}

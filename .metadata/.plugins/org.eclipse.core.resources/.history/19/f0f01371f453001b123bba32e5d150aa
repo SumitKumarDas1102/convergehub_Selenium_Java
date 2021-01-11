@@ -1,0 +1,7 @@
+package ConvergHub_TestCases;
+
+import ConvergHub_Base.TestBase;
+
+public class LeadPageTest extends TestBase {
+
+}

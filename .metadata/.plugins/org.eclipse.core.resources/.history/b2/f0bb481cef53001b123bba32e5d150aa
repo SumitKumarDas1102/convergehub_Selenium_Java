@@ -1,0 +1,33 @@
+package ConvergHub_Pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+
+import ConvergHub_Base.TestBase;
+
+public class DashboaardPage extends TestBase {
+	
+	@FindBy(xpath="//li[@class='admin-name']")
+	WebElement userNameLabel;
+	
+	@FindBy(xpath="//a[contains(text(),'Sales')]")
+	WebElement SalesButton;
+	
+	public DashboaardPage() {
+		PageFactory.initElements(driver, this);
+	}
+	
+	public void validateUserName() {
+		userNameLabel.isDisplayed();
+		String loggedinUserName = userNameLabel.getText();
+	}
+	
+	public LeadsPage clickOnSales() {
+		SalesButton.isDisplayed();
+		SalesButton.click();
+		return new LeadsPage();
+	}
+
+}

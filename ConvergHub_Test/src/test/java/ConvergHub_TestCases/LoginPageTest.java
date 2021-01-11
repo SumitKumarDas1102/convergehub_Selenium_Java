@@ -25,13 +25,13 @@ public class LoginPageTest extends TestBase{
 	
 	
 	@Test(priority=1)
-	public void IsLoginPageLogoVisible() {
+	public void IsLoginPageLogoVisibleTest() {
 		boolean flag = lp.validateLoginPageLogo();
 		Assert.assertTrue(flag);
 	}
 	
 	@Test(priority=2)
-	public void IsLoginFunctionWorking() {
+	public void IsLoginFunctionWorkingTest() {
 		dp = lp.loginFunction(prop.getProperty("userName"), prop.getProperty("userPassword"));
 	}
 	

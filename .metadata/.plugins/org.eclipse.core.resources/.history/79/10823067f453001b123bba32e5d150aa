@@ -1,0 +1,50 @@
+package ConvergHub_TestCases;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+
+import ConvergHub_Base.TestBase;
+import ConvergHub_Pages.DashboaardPage;
+import ConvergHub_Pages.LeadsPage;
+import ConvergHub_Pages.LoginPage;
+import ConvergHub_Pages.NewLeadAddPage;
+
+public class NewLeadAddPageTest extends TestBase {
+	LoginPage lp;
+	DashboaardPage dp;
+	LeadsPage ld_Pages;
+	NewLeadAddPage addLead_page;
+	
+	public NewLeadAddPageTest() {
+		super();
+	}
+	
+	@BeforeMethod
+	public void setUp() {
+		initialization();
+		lp = new LoginPage();
+		dp = lp.loginFunction(prop.getProperty("userName"), prop.getProperty("userPassword"));
+		ld_Pages = dp.clickOnSales();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	@AfterMethod
+	public void tearDown() {
+		
+		driver.quit();
+	}
+
+}
