@@ -30,6 +30,7 @@ public class LeadPageTest extends TestBase {
 		initialization();
 		lp = new LoginPage();
 		dp = lp.loginFunction(prop.getProperty("userName"), prop.getProperty("userPassword"));
+		dp.rejectNotificationPopUp();
 		driver.manage().timeouts().implicitlyWait(TestUtil.implicit_wait, TimeUnit.SECONDS);
 		ld_Pages = dp.clickOnSales();
 	}

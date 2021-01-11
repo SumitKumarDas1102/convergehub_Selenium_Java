@@ -7,7 +7,7 @@ public class TestUtil extends TestBase {
 	public static long implicit_wait = 50;
 	public static long explicit_wait = 60;
 	
-	public void switchToActiveFrame() {
+	public static void switchToActiveFrame() {
 		driver.switchTo().parentFrame();
 	}
 }

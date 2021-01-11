@@ -24,6 +24,7 @@ public class DashboardPageTest extends TestBase{
 		initialization();
 		lp = new LoginPage();
 		dp = lp.loginFunction(prop.getProperty("userName"), prop.getProperty("userPassword"));
+		dp.rejectNotificationPopUp();
 	}
 	
 	@Test(priority=1)

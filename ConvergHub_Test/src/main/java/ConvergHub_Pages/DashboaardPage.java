@@ -7,6 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import ConvergHub_Base.TestBase;
+import ConvergHub_Util.TestUtil;
 
 public class DashboaardPage extends TestBase {
 	
@@ -18,6 +19,9 @@ public class DashboaardPage extends TestBase {
 	
 	@FindBy(xpath="//a[contains(text(),'Logout')]")
 	private WebElement logOutButton;
+	
+	@FindBy(xpath="//button[contains(text(),'Not Now')]")
+	private WebElement rejectNotificationButton;
 	
 	public DashboaardPage() {
 		PageFactory.initElements(driver, this);
@@ -37,6 +41,11 @@ public class DashboaardPage extends TestBase {
 		actions.moveToElement(userNameLabel).perform();
 		logOutButton.click();
 		return new LoginPage();
+	}
+	
+	public void rejectNotificationPopUp() {
+		TestUtil.switchToActiveFrame();
+		rejectNotificationButton.click();
 	}
 
 }
