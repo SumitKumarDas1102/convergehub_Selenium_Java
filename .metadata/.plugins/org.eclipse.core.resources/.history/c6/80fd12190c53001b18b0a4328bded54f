@@ -1,0 +1,27 @@
+package ConvergHub_Base;
+
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+
+public class TestBase {
+	
+	static WebDriver driver;
+	static Properties prop;
+	
+	
+	
+	
+	
+	public TestBase() {
+		try {
+			
+		} catch () {
+			
+		} catch () {
+			
+		}
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package ConvergHub_Pages;
+
+import ConvergHub_Base.TestBase;
+
+public class LoginPage extends TestBase{
+
+	@FindBy(xpath="//img[@alt='ConvergeHub']")
+	
+	
+	
+	
+	
+	
+	
+}

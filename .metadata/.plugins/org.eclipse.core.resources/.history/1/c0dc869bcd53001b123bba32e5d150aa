@@ -1,0 +1,18 @@
+package ConvergHub_TestCases;
+
+import org.testng.annotations.BeforeMethod;
+
+import ConvergHub_Base.TestBase;
+
+public class LoginPageTest extends TestBase{
+	
+	public LoginPageTest() {
+		super();
+	}
+	
+	@BeforeMethod
+	public void setUp() {
+		initialization();
+	}
+
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="20255" started-at="2021-01-11T05:38:03Z" finished-at="2021-01-11T05:38:24Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="20255" started-at="2021-01-11T05:38:03Z" finished-at="2021-01-11T05:38:24Z">
+      <class name="ConvergHub_TestCases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ConvergHub_TestCases.LoginPageTest@71b1176b]" name="setUp" is-config="true" duration-ms="9582" started-at="2021-01-11T05:38:03Z" finished-at="2021-01-11T05:38:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="LoginPageLogoTest()[pri:1, instance:ConvergHub_TestCases.LoginPageTest@71b1176b]" name="LoginPageLogoTest" duration-ms="75" started-at="2021-01-11T05:38:13Z" finished-at="2021-01-11T05:38:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPageLogoTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ConvergHub_TestCases.LoginPageTest@71b1176b]" name="tearDown" is-config="true" duration-ms="1175" started-at="2021-01-11T05:38:13Z" finished-at="2021-01-11T05:38:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ConvergHub_TestCases.LoginPageTest@71b1176b]" name="setUp" is-config="true" duration-ms="7645" started-at="2021-01-11T05:38:14Z" finished-at="2021-01-11T05:38:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="LoginFunctionTest()[pri:2, instance:ConvergHub_TestCases.LoginPageTest@71b1176b]" name="LoginFunctionTest" duration-ms="1092" started-at="2021-01-11T05:38:22Z" finished-at="2021-01-11T05:38:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginFunctionTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ConvergHub_TestCases.LoginPageTest@71b1176b]" name="tearDown" is-config="true" duration-ms="659" started-at="2021-01-11T05:38:23Z" finished-at="2021-01-11T05:38:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ConvergHub_TestCases.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,7 @@
+testBrowser = Chrome
+applicationURL = https://app01.convergehub.com/
+
+userName = mumbamod@gmail.com
+userPassword = Gulai2020!
+
+chromeDriverPath = D:/QA_Work/automationWeInvest/Driver/chromedriver_win32/chromedriver.exe
