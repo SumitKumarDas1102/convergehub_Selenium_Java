@@ -35,7 +35,7 @@ public class NewLeadAddPage extends TestBase{
 	@FindBy(xpath="//input[@id='last_name']")
 	private WebElement lastNameInputField;
 	
-	@FindBy(xpath="//select[@id='industry_select_drp_dwn']")
+	@FindBy(xpath="//div[@id='industry_dom']")
 	private WebElement industryDropDown;
 	
 	@FindBy(xpath="//select[@title='Country code']")

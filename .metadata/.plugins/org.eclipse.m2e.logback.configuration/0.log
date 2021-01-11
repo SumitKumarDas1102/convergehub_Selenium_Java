@@ -659,3 +659,56 @@
 2021-01-11 20:24:51,562 [Worker-129: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\main\resources
 2021-01-11 20:24:51,562 [Worker-129: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-01-11 20:24:51,562 [Worker-129: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\test\resources
+2021-01-11 22:54:54,939 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-01-11 23:03:15,299 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:03:15,300 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\main\resources
+2021-01-11 23:03:15,302 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:03:15,302 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\test\resources
+2021-01-11 23:05:38,763 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:05:38,763 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\main\resources
+2021-01-11 23:05:38,765 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:05:38,765 [Worker-4: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\test\resources
+2021-01-11 23:09:16,404 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:09:16,404 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\main\resources
+2021-01-11 23:09:16,406 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:09:16,406 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\test\resources
+2021-01-11 23:09:47,581 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:09:47,581 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\main\resources
+2021-01-11 23:09:47,583 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:09:47,583 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\test\resources
+2021-01-11 23:10:21,078 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:10:21,078 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\main\resources
+2021-01-11 23:10:21,080 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:10:21,080 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\test\resources
+2021-01-11 23:16:26,172 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:16:26,173 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\main\resources
+2021-01-11 23:16:26,175 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:16:26,175 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\test\resources
+2021-01-11 23:22:44,726 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:22:44,727 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\main\resources
+2021-01-11 23:22:44,728 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:22:44,728 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\test\resources
+2021-01-11 23:25:02,068 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:25:02,069 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\main\resources
+2021-01-11 23:25:02,071 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:25:02,071 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\test\resources
+2021-01-11 23:25:10,909 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:25:10,909 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\main\resources
+2021-01-11 23:25:10,910 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:25:10,910 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\test\resources
+2021-01-11 23:26:32,724 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:26:32,724 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\main\resources
+2021-01-11 23:26:32,725 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:26:32,725 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\test\resources
+2021-01-11 23:29:02,538 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:29:02,539 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\main\resources
+2021-01-11 23:29:02,541 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:29:02,541 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\test\resources
+2021-01-11 23:29:34,510 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:29:34,510 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\main\resources
+2021-01-11 23:29:34,512 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:29:34,512 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\test\resources
+2021-01-11 23:29:53,364 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:29:53,364 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\main\resources
+2021-01-11 23:29:53,366 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-01-11 23:29:53,366 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\QA_Work\POC\POC_Java\Selenium_ConvergHub\ConvergHub_Test\src\test\resources

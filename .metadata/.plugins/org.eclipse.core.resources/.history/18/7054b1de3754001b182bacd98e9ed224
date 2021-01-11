@@ -26,7 +26,7 @@ public class NewLeadAddPage extends TestBase{
 	@FindBy(xpath="//li[@id='othr_tab']")
 	private WebElement OtherTab;
 	
-	@FindBy(xpath="//select[@id='salutation_select_drp_dwn']")
+	@FindBy(xpath="//div[@id=\"salutation_dom\"]")
 	private WebElement salutationDropDown;
 	
 	@FindBy(xpath="//input[@id='first_name']")
@@ -35,7 +35,7 @@ public class NewLeadAddPage extends TestBase{
 	@FindBy(xpath="//input[@id='last_name']")
 	private WebElement lastNameInputField;
 	
-	@FindBy(xpath="//select[@id='industry_select_drp_dwn']")
+	@FindBy(xpath="//div[@id='industry_dom']")
 	private WebElement industryDropDown;
 	
 	@FindBy(xpath="//select[@title='Country code']")
@@ -64,22 +64,19 @@ public class NewLeadAddPage extends TestBase{
 	
 	//Needs to modify later with proper solution
 	public void addLead_generalStep() {
-		
+		salutationDropDown.clear();
 		Select select01 = new Select(salutationDropDown);
 		select01.selectByValue("Mr.");
-		
 		firstNameInputField.clear();
 		firstNameInputField.sendKeys("Corelynx");
-		
 		lastNameInputField.clear();
 		lastNameInputField.sendKeys("tester");
-		
+		industryDropDown.clear();
 		Select select02 = new Select(industryDropDown);
 		select02.selectByVisibleText("Technology");
-		
+		countryDropDown.clear();
 		Select select03 = new Select(countryDropDown);
 		select03.selectByVisibleText("+91");
-		
 		phoneNumberInputField.clear();
 		phoneNumberInputField.sendKeys("9586956325");
 		AddressTab.click();
@@ -92,6 +89,7 @@ public class NewLeadAddPage extends TestBase{
 	}
 	
 	public void addLead_otherStep() {
+		enterDOB.clear();
 		enterDOB.sendKeys("");
 	}
 	
