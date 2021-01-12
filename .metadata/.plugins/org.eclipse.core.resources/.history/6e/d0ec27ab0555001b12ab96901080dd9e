@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Converge Hub automation tests">
+
+
+	<test name="Converge Hub Create new lead tests">
+		<classes>
+			<class name="ConvergHub_TestCases.LoginPageTest"></class>
+			<class name="ConvergHub_TestCases.DashboardPageTest"></class>
+			<class name="ConvergHub_TestCases.LeadPageTest"></class>
+			<class name="ConvergHub_TestCases.NewLeadAddPageTest"></class>
+		</classes>
+	</test>
+</suite>

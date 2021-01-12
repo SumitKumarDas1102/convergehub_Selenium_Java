@@ -53,12 +53,6 @@ public class NewLeadAddPageTest extends TestBase {
 		return data;
 	}
 	
-	
-	
-	
-	
-	
-	
 	@Test(priority=2, dataProvider= "getConvergHubTestData")
 	public void IsUserAbleToFillGeneralData(String sal, String	frstName, String lastName, String industry, String	add, String	city, String state, String country, 
 			String month) {
@@ -73,12 +67,12 @@ public class NewLeadAddPageTest extends TestBase {
 	
 	
 	
-//	@AfterMethod
-//	public void tearDown() {
-//		dp.clickOnLogoutButon();
-//		driver.quit();
-//	}
-//	
+	@AfterMethod
+	public void tearDown() {
+		dp.clickOnLogoutButon();
+		driver.quit();
+	}
+	
 	
 
 }
