@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import ConvergHub_Base.TestBase;
@@ -19,6 +20,8 @@ public class NewLeadAddPageTest extends TestBase {
 	DashboaardPage dp;
 	LeadsPage ld_Pages;
 	NewLeadAddPage addLead_page;
+	
+	String sheetName = "addleads";
 	
 	public NewLeadAddPageTest() {
 		super();
@@ -42,20 +45,26 @@ public class NewLeadAddPageTest extends TestBase {
 		Assert.assertEquals(headerText, "Add Lead");
 	}
 	
-//	@Test(priority=2)
-//	public void IsUserAbleToFillGeneralData1() {
-//		addLead_page.addLead_generalStep();
-//		addLead_page.addLead_addressStep();
-//		addLead_page.addLead_otherStep();
-//		String leadName = addLead_page.validateCreatedLeadName();
-//		Assert.assertEquals(leadName, "Corelynx tester");
-//	}
-//	
-	@Test(priority=2)
-	public void IsUserAbleToFillGeneralData() {
-		addLead_page.createLead_General("Mr.", "Corelynx", "tester", "Technology", "+91", "9586956325");
-		addLead_page.createLead_Address("Kolkata, West Bengal, India", "Kolkata", "West Bengal", "India");
-		addLead_page.createLead_Other("Feb", "1991", "11", "1 - 30");
+	
+	
+	@DataProvider
+	public Object[][] getConvergHubTestData() {
+		Object data[][] = TestUtil.getTestData(sheetName);
+		return data;
+	}
+	
+	
+	
+	
+	
+	
+	
+	@Test(priority=2, dataProvider= "getConvergHubTestData")
+	public void IsUserAbleToFillGeneralData(String sal, String	frstName, String lastName, String industry, String	add, String	city, String state, String country, 
+			String month) {
+		addLead_page.createLead_General(sal, frstName, lastName, industry);
+		addLead_page.createLead_Address(add, city, state, country);
+		addLead_page.createLead_Other(month, "1991", "11" );
 		String leadName = addLead_page.validateCreatedLeadName();
 		Assert.assertEquals(leadName, "Corelynx tester");
 	}

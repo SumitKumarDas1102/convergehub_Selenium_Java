@@ -69,9 +69,6 @@ public class NewLeadAddPage extends TestBase{
 	@FindBy(xpath="//a[@class='ui-state-default']")
 	private WebElement selectDay;
 	
-	@FindBy(xpath="//select[@id='employees_select_drp_dwn']")
-	private WebElement sizeOfEmployee;
-	
 	@FindBy(xpath="//button[@class='button fresh_green save_button_from_module_add']")
 	private WebElement clickOnSave;
 	
@@ -88,7 +85,7 @@ public class NewLeadAddPage extends TestBase{
 	}
 	
 	
-	public void createLead_General(String sal, String frstName, String lastName, String industry, String countryCode, String phno) {
+	public void createLead_General(String sal, String frstName, String lastName, String industry) {
 		Select select01 = new Select(salutationDropDown);
 		select01.selectByValue(sal);
 		
@@ -100,12 +97,6 @@ public class NewLeadAddPage extends TestBase{
 		
 		Select select02 = new Select(industryDropDown);
 		select02.selectByVisibleText(industry);
-		
-		Select select03 = new Select(countryDropDown);
-		select03.selectByVisibleText(countryCode);
-		
-		phoneNumberInputField.clear();
-		phoneNumberInputField.sendKeys(phno);
 		
 		AddressTab.click();
 	}
@@ -126,7 +117,7 @@ public class NewLeadAddPage extends TestBase{
 		OtherTab.click();
 	}
 	
-	public void createLead_Other(String month, String year, String day, String empNumber) {
+	public void createLead_Other(String month, String year, String day) {
 		enterDOB.click();
 		
 		Select selectMnth = new Select(selectMonth);
@@ -136,32 +127,6 @@ public class NewLeadAddPage extends TestBase{
 		selectYr.selectByVisibleText(year);
 		
 		selectDay.sendKeys(day);
-		
-		Select selectsizeOfEmp = new Select(sizeOfEmployee);
-		selectsizeOfEmp.selectByVisibleText(empNumber);
-		
-		clickOnSave.click();
-	}
-	
-	
-	public void addLead_addressStep() {
-		primaryAddress.clear();
-		primaryAddress.sendKeys("Kolkata, West Bengal, India");
-		OtherTab.click();
-	}
-	
-	public void addLead_otherStep() {
-		enterDOB.click();
-		Select selectMnth = new Select(selectMonth);
-		selectMnth.selectByVisibleText("Feb");
-		
-		Select selectYr = new Select(selectYear);
-		selectYr.selectByVisibleText("1991");
-		
-		selectDay.sendKeys("11");
-		
-		Select selectsizeOfEmp = new Select(sizeOfEmployee);
-		selectsizeOfEmp.selectByVisibleText("1 - 30");
 		
 		clickOnSave.click();
 	}
