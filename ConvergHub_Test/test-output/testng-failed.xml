@@ -6,7 +6,7 @@
       <class name="ConvergHub_TestCases.NewLeadAddPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="IsUserAbleToFillGeneralData"/>
+          <include name="IsLeadAddedSuccessfullyTest"/>
         </methods>
       </class> <!-- ConvergHub_TestCases.NewLeadAddPageTest -->
     </classes>

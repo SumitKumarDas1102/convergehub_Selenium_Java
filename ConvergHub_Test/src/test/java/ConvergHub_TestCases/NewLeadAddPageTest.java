@@ -45,6 +45,10 @@ public class NewLeadAddPageTest extends TestBase {
 	@Test(priority=2)
 	public void IsUserAbleToFillGeneralData() {
 		addLead_page.addLead_generalStep();
+		addLead_page.addLead_addressStep();
+		addLead_page.addLead_otherStep();
+		String leadName = addLead_page.validateCreatedLeadName();
+		Assert.assertEquals(leadName, "Corelynx tester");
 	}
 	
 	
@@ -53,12 +57,11 @@ public class NewLeadAddPageTest extends TestBase {
 	
 	
 	
-	
-//	@AfterMethod
-//	public void tearDown() {
-//		dp.clickOnLogoutButon();
-//		driver.quit();
-//	}
+	@AfterMethod
+	public void tearDown() {
+		dp.clickOnLogoutButon();
+		driver.quit();
+	}
 	
 	
 

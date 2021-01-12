@@ -1,5 +1,7 @@
 package ConvergHub_TestCases;
 
+import java.util.concurrent.TimeUnit;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -9,6 +11,7 @@ import ConvergHub_Base.TestBase;
 import ConvergHub_Pages.DashboaardPage;
 import ConvergHub_Pages.LeadsPage;
 import ConvergHub_Pages.LoginPage;
+import ConvergHub_Util.TestUtil;
 
 public class DashboardPageTest extends TestBase{
 	LoginPage lp;
@@ -34,7 +37,7 @@ public class DashboardPageTest extends TestBase{
 	}
 	
 	@Test(priority=2)
-	public void IsSalesButtonWorkingTest() {
+	public void IsLeadButtonWorkingTest() {
 		ld_Pages = dp.clickOnSales();
 	}
 	

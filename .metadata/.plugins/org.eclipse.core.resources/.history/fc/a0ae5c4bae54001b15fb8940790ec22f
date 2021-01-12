@@ -1,0 +1,34 @@
+package ConvergHub_Pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import ConvergHub_Base.TestBase;
+
+public class CreatedLeadDetailsPage extends TestBase {
+	
+	@FindBy(xpath="//span[@id='header_name_change']")
+	private WebElement createdLeadName;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	public CreatedLeadDetailsPage() {
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+	public String validateCreatedLeadName() {
+		return createdLeadName.getText();
+	}
+	
+	
+	
+
+}

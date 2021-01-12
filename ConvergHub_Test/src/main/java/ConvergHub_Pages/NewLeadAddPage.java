@@ -1,6 +1,7 @@
 package ConvergHub_Pages;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
@@ -10,12 +11,12 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
 import ConvergHub_Base.TestBase;
+import ConvergHub_Util.TestUtil;
 
 public class NewLeadAddPage extends TestBase{
 	
 	@FindBy(xpath="//h1[contains(text(),'Add Lead')]")
 	private WebElement headerText;
-	
 	
 	@FindBy(xpath="//li[@id='gen_tab']")
 	private WebElement GeneralTab;
@@ -50,8 +51,23 @@ public class NewLeadAddPage extends TestBase{
 	@FindBy(xpath="//input[@id='birthdate']")
 	private WebElement enterDOB;
 	
-	@FindBy(xpath="//div[@id='employees_dom']")
+	@FindBy(xpath="//select[@class='ui-datepicker-month']")
+	private WebElement selectMonth;
+	
+	@FindBy(xpath="//select[@class='ui-datepicker-year']")
+	private WebElement selectYear;
+	
+	@FindBy(xpath="//a[@class='ui-state-default']")
+	private WebElement selectDay;
+	
+	@FindBy(xpath="//select[@id='employees_select_drp_dwn']")
 	private WebElement sizeOfEmployee;
+	
+	@FindBy(xpath="//button[@class='button fresh_green save_button_from_module_add']")
+	private WebElement clickOnSave;
+	
+	@FindBy(xpath="//span[@id='header_name_change']")
+	private WebElement createdLeadName;
 	
 	public NewLeadAddPage() {
 		PageFactory.initElements(driver, this);
@@ -92,7 +108,24 @@ public class NewLeadAddPage extends TestBase{
 	}
 	
 	public void addLead_otherStep() {
-		enterDOB.sendKeys("");
+		enterDOB.click();
+		Select selectMnth = new Select(selectMonth);
+		selectMnth.selectByVisibleText("Feb");
+		
+		Select selectYr = new Select(selectYear);
+		selectYr.selectByVisibleText("1991");
+		
+		selectDay.sendKeys("11");
+		
+		Select selectsizeOfEmp = new Select(sizeOfEmployee);
+		selectsizeOfEmp.selectByVisibleText("1 - 30");
+		
+		clickOnSave.click();
+	}
+	
+	
+	public String validateCreatedLeadName() {
+		return createdLeadName.getText();
 	}
 	
 	
