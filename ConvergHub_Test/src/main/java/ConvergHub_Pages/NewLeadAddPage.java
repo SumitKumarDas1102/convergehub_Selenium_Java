@@ -48,6 +48,15 @@ public class NewLeadAddPage extends TestBase{
 	@FindBy(xpath="//input[@id='primary_address']")
 	private WebElement primaryAddress;
 	
+	@FindBy(xpath="//input[@id='primary_address_city']")
+	private WebElement cityName;
+	
+	@FindBy(xpath="//input[@id='primary_address_state']")
+	private WebElement stateName;
+	
+	@FindBy(xpath="//select[@id='primary_address_country_select_drp_dwn']")
+	private WebElement selectCournty;
+	
 	@FindBy(xpath="//input[@id='birthdate']")
 	private WebElement enterDOB;
 	
@@ -78,28 +87,62 @@ public class NewLeadAddPage extends TestBase{
 		return headerText.getText();
 	}
 	
-	//Needs to modify later with proper solution
-	public void addLead_generalStep() {
-		
+	
+	public void createLead_General(String sal, String frstName, String lastName, String industry, String countryCode, String phno) {
 		Select select01 = new Select(salutationDropDown);
-		select01.selectByValue("Mr.");
+		select01.selectByValue(sal);
 		
 		firstNameInputField.clear();
-		firstNameInputField.sendKeys("Corelynx");
+		firstNameInputField.sendKeys(frstName);
 		
 		lastNameInputField.clear();
-		lastNameInputField.sendKeys("tester");
+		lastNameInputField.sendKeys(lastName);
 		
 		Select select02 = new Select(industryDropDown);
-		select02.selectByVisibleText("Technology");
+		select02.selectByVisibleText(industry);
 		
 		Select select03 = new Select(countryDropDown);
-		select03.selectByVisibleText("+91");
+		select03.selectByVisibleText(countryCode);
 		
 		phoneNumberInputField.clear();
-		phoneNumberInputField.sendKeys("9586956325");
+		phoneNumberInputField.sendKeys(phno);
+		
 		AddressTab.click();
 	}
+	
+	public void createLead_Address(String add, String city, String state, String country) {
+		primaryAddress.clear();
+		primaryAddress.sendKeys(add);
+		
+		cityName.clear();
+		cityName.sendKeys(city);
+		
+		stateName.clear();
+		stateName.sendKeys(state);
+		
+		Select select04 = new Select(selectCournty);
+		select04.selectByVisibleText(country);
+		
+		OtherTab.click();
+	}
+	
+	public void createLead_Other(String month, String year, String day, String empNumber) {
+		enterDOB.click();
+		
+		Select selectMnth = new Select(selectMonth);
+		selectMnth.selectByVisibleText(month);
+		
+		Select selectYr = new Select(selectYear);
+		selectYr.selectByVisibleText(year);
+		
+		selectDay.sendKeys(day);
+		
+		Select selectsizeOfEmp = new Select(sizeOfEmployee);
+		selectsizeOfEmp.selectByVisibleText(empNumber);
+		
+		clickOnSave.click();
+	}
+	
 	
 	public void addLead_addressStep() {
 		primaryAddress.clear();

@@ -42,11 +42,20 @@ public class NewLeadAddPageTest extends TestBase {
 		Assert.assertEquals(headerText, "Add Lead");
 	}
 	
+//	@Test(priority=2)
+//	public void IsUserAbleToFillGeneralData1() {
+//		addLead_page.addLead_generalStep();
+//		addLead_page.addLead_addressStep();
+//		addLead_page.addLead_otherStep();
+//		String leadName = addLead_page.validateCreatedLeadName();
+//		Assert.assertEquals(leadName, "Corelynx tester");
+//	}
+//	
 	@Test(priority=2)
 	public void IsUserAbleToFillGeneralData() {
-		addLead_page.addLead_generalStep();
-		addLead_page.addLead_addressStep();
-		addLead_page.addLead_otherStep();
+		addLead_page.createLead_General("Mr.", "Corelynx", "tester", "Technology", "+91", "9586956325");
+		addLead_page.createLead_Address("Kolkata, West Bengal, India", "Kolkata", "West Bengal", "India");
+		addLead_page.createLead_Other("Feb", "1991", "11", "1 - 30");
 		String leadName = addLead_page.validateCreatedLeadName();
 		Assert.assertEquals(leadName, "Corelynx tester");
 	}
@@ -55,14 +64,12 @@ public class NewLeadAddPageTest extends TestBase {
 	
 	
 	
-	
-	
-	@AfterMethod
-	public void tearDown() {
-		dp.clickOnLogoutButon();
-		driver.quit();
-	}
-	
+//	@AfterMethod
+//	public void tearDown() {
+//		dp.clickOnLogoutButon();
+//		driver.quit();
+//	}
+//	
 	
 
 }
