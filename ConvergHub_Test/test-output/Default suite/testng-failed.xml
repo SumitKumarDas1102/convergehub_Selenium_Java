@@ -6,7 +6,8 @@
       <class name="ConvergHub_TestCases.NewLeadAddPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="IsUserAbleToFillGeneralData" invocation-numbers="0"/>
+          <include name="validateHeaderText"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- ConvergHub_TestCases.NewLeadAddPageTest -->
     </classes>

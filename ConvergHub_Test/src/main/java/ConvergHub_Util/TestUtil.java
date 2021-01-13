@@ -15,9 +15,6 @@ public class TestUtil extends TestBase {
 	public static long Page_load_timeout = 100;
 	public static long implicit_wait = 50;
 	
-	public static String TESTDATA_SHEET_PATH = "D:\\QA_Work\\POC\\POC_Java\\Selenium_ConvergHub\\"
-			+ "ConvergHub_Test\\src\\main\\java\\ConvergHub_TestData\\ConvergHub_TestData.xlsx";
-	
 	static Workbook book;
 	static Sheet sheet;
 	
@@ -28,9 +25,11 @@ public class TestUtil extends TestBase {
 	
 	//To get the test data from excel file	
 	public static Object[][] getTestData(String sheetName) {
+		String testDataSheetPath = prop.getProperty("TESTDATA_SHEET_PATH");
+		
 		FileInputStream file = null;
 		try {
-			file = new FileInputStream(TESTDATA_SHEET_PATH);
+			file = new FileInputStream(testDataSheetPath);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
@@ -48,32 +47,6 @@ public class TestUtil extends TestBase {
 		}
 		return data;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 }

@@ -1,7 +1,0 @@
-package ConvergHub_TestCases;
-
-import ConvergHub_Base.TestBase;
-
-public class NewLeadAddPageTest extends TestBase {
-
-}

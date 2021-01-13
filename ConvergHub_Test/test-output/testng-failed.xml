@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Converge Hub automation tests]">
-  <test thread-count="5" name="Converge Hub Create new lead tests(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ConvergHub_TestCases.LeadPageTest">
+      <class name="ConvergHub_TestCases.NewLeadAddPageTest">
         <methods>
-          <include name="tearDown"/>
-          <include name="CheckAddNewLeadFunction"/>
           <include name="setUp"/>
+          <include name="validateHeaderText"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- ConvergHub_TestCases.LeadPageTest -->
+      </class> <!-- ConvergHub_TestCases.NewLeadAddPageTest -->
     </classes>
-  </test> <!-- Converge Hub Create new lead tests(failed) -->
-</suite> <!-- Failed suite [Converge Hub automation tests] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
