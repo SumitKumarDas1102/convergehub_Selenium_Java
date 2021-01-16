@@ -8,18 +8,28 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.openqa.selenium.WebElement;
 
 import ConvergHub_Base.TestBase;
 
 public class TestUtil extends TestBase {
 	public static long Page_load_timeout = 100;
 	public static long implicit_wait = 50;
+	public static long thread_Sleep_wait = 1500;
 	
 	static Workbook book;
 	static Sheet sheet;
 	
 	public static void switchToActiveFrame() {
 		driver.switchTo().parentFrame();
+	}
+	
+	public static void threadSleep() {
+		try {
+		    Thread.sleep(thread_Sleep_wait);
+		} catch(InterruptedException e) {
+		    System.out.println("got interrupted!");
+		}
 	}
 	
 	

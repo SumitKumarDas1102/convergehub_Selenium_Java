@@ -14,7 +14,7 @@ import org.openqa.selenium.support.PageFactory;
 import ConvergHub_Base.TestBase;
 import ConvergHub_Util.TestUtil;
 
-public class LeadsPage extends TestBase{
+public class LeadsPage extends TestBase {
 	
 	@FindBy(xpath="//a[contains(text(),'+ New')]")
 	private WebElement addNewLead;

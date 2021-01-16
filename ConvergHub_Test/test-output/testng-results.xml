@@ -1,21 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21828" started-at="2021-01-13T05:25:20Z" finished-at="2021-01-13T05:25:41Z">
+  <suite name="Default suite" duration-ms="60295" started-at="2021-01-16T05:56:53Z" finished-at="2021-01-16T05:57:53Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21828" started-at="2021-01-13T05:25:20Z" finished-at="2021-01-13T05:25:41Z">
+    <test name="Default test" duration-ms="60295" started-at="2021-01-16T05:56:53Z" finished-at="2021-01-16T05:57:53Z">
       <class name="ConvergHub_TestCases.NewLeadAddPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:ConvergHub_TestCases.NewLeadAddPageTest@60d8c9b7]" name="setUp" is-config="true" duration-ms="19781" started-at="2021-01-13T05:25:20Z" finished-at="2021-01-13T05:25:39Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ConvergHub_TestCases.NewLeadAddPageTest@59d016c9]" name="setUp" is-config="true" duration-ms="23203" started-at="2021-01-16T05:56:53Z" finished-at="2021-01-16T05:57:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validateHeaderText()[pri:1, instance:ConvergHub_TestCases.NewLeadAddPageTest@60d8c9b7]" name="validateHeaderText" duration-ms="1116" started-at="2021-01-13T05:25:39Z" finished-at="2021-01-13T05:25:40Z">
+        <test-method status="PASS" signature="validateHeaderText()[pri:1, instance:ConvergHub_TestCases.NewLeadAddPageTest@59d016c9]" name="validateHeaderText" duration-ms="1541" started-at="2021-01-16T05:57:16Z" finished-at="2021-01-16T05:57:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateHeaderText -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:ConvergHub_TestCases.NewLeadAddPageTest@60d8c9b7]" name="tearDown" is-config="true" duration-ms="912" started-at="2021-01-13T05:25:40Z" finished-at="2021-01-13T05:25:41Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ConvergHub_TestCases.NewLeadAddPageTest@59d016c9]" name="tearDown" is-config="true" duration-ms="2160" started-at="2021-01-16T05:57:18Z" finished-at="2021-01-16T05:57:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ConvergHub_TestCases.NewLeadAddPageTest@59d016c9]" name="setUp" is-config="true" duration-ms="23392" started-at="2021-01-16T05:57:21Z" finished-at="2021-01-16T05:57:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="IsUserAbleToFillGeneralData(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:ConvergHub_TestCases.NewLeadAddPageTest@59d016c9]" name="IsUserAbleToFillGeneralData" duration-ms="7507" started-at="2021-01-16T05:57:44Z" data-provider="getConvergHubTestData" finished-at="2021-01-16T05:57:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Mr.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Corelynx]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[tester]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Technology]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Kolkata, West Bengal, India]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Kolkata]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[West Bengal]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[India]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Feb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IsUserAbleToFillGeneralData -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ConvergHub_TestCases.NewLeadAddPageTest@59d016c9]" name="tearDown" is-config="true" duration-ms="1078" started-at="2021-01-16T05:57:52Z" finished-at="2021-01-16T05:57:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

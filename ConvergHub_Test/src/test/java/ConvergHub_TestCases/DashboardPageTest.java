@@ -18,6 +18,7 @@ public class DashboardPageTest extends TestBase{
 	DashboaardPage dp;
 	LeadsPage ld_Pages;
 	
+	
 	public DashboardPageTest() {
 		super();
 	}
@@ -38,9 +39,9 @@ public class DashboardPageTest extends TestBase{
 	
 	@Test(priority=2)
 	public void IsLeadButtonWorkingTest() {
-		ld_Pages = dp.clickOnSales();
+		ld_Pages = dp.clickOnLeadButton();
 	}
-	
+
 	
 	
 	

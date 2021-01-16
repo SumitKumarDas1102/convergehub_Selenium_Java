@@ -1,7 +1,11 @@
 package ConvergHub_Pages;
 
+import java.util.Iterator;
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -23,6 +27,15 @@ public class DashboaardPage extends TestBase {
 	@FindBy(xpath="//button[contains(text(),'Not Now')]")
 	private WebElement rejectNotificationButton;
 	
+	@FindBy(xpath="//div[@id = 'left-panel_menu']//ul//li[@id='lbl_leads']")
+	private WebElement headerLeadButton;
+	
+	@FindAll(@FindBy(xpath="//div[@id='left-panel_menu']//li"))
+	private List<WebElement> leftMenuitems;
+	
+	
+	
+	
 	public DashboaardPage() {
 		PageFactory.initElements(driver, this);
 	}
@@ -31,10 +44,29 @@ public class DashboaardPage extends TestBase {
 		return userNameLabel.getText();
 	}
 	
-	public LeadsPage clickOnSales() {
-		SalesButton.click();
+	public LeadsPage clickOnLeadButton() {
+		TestUtil.threadSleep();
+		headerLeadButton.click();
 		return new LeadsPage();
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	public LoginPage clickOnLogoutButon() {
 		Actions actions = new Actions(driver);

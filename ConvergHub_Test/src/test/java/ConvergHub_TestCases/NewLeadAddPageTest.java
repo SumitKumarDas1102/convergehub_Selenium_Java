@@ -35,7 +35,7 @@ public class NewLeadAddPageTest extends TestBase {
 		dp = lp.loginFunction(prop.getProperty("userName"), prop.getProperty("userPassword"));
 		dp.rejectNotificationPopUp();
 		driver.manage().timeouts().implicitlyWait(TestUtil.implicit_wait, TimeUnit.SECONDS);
-		ld_Pages = dp.clickOnSales();
+		ld_Pages =  dp.clickOnLeadButton();
 		addLead_page = ld_Pages.clickOnAddNewButton();
 	}
 	

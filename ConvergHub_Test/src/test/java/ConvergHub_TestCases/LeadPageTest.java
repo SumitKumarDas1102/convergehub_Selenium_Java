@@ -32,7 +32,7 @@ public class LeadPageTest extends TestBase {
 		dp = lp.loginFunction(prop.getProperty("userName"), prop.getProperty("userPassword"));
 		dp.rejectNotificationPopUp();
 		driver.manage().timeouts().implicitlyWait(TestUtil.implicit_wait, TimeUnit.SECONDS);
-		ld_Pages = dp.clickOnSales();
+		ld_Pages =  dp.clickOnLeadButton();
 	}
 	
 	@Test(priority=1)
@@ -56,11 +56,11 @@ public class LeadPageTest extends TestBase {
 	
 	
 	
-	
-	@AfterMethod
-	public void tearDown() {
-		dp.clickOnLogoutButon();
-		driver.quit();
-	}
+//	
+//	@AfterMethod
+//	public void tearDown() {
+//		dp.clickOnLogoutButon();
+//		driver.quit();
+//	}
 
 }
