@@ -1,0 +1,46 @@
+package ConvergHub_Pages;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import ConvergHub_Base.TestBase;
+import ConvergHub_Util.TestUtil;
+
+public class LefMenuAccessPage extends TestBase { 
+	
+	@FindBy(xpath="//td[@class='grid_left_content']")
+	private WebElement lftMenu;
+
+	@FindBy(xpath="//li[@id='lbl_leads']")
+	private WebElement leadButton;
+	
+	
+	
+	
+	
+	
+	
+	public LefMenuAccessPage() {
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+	
+	public LeadsPage clickOnLeadFromLeftMenu() {
+		//driver.manage().timeouts().implicitlyWait(TestUtil.implicit_wait, TimeUnit.SECONDS);
+		leadButton.click();
+		return new LeadsPage();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

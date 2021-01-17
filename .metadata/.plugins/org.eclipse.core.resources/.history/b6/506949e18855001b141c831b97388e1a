@@ -1,0 +1,27 @@
+package ConvergHub_Pages;
+
+import org.openqa.selenium.support.PageFactory;
+
+import ConvergHub_Base.TestBase;
+
+public class HeaderMenuAccessPage extends TestBase {
+	
+	
+	
+	
+	public HeaderMenuAccessPage() {
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

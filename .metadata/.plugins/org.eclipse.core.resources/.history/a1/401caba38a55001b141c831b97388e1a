@@ -1,0 +1,42 @@
+package ConvergHub_Pages;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import ConvergHub_Base.TestBase;
+import ConvergHub_Util.TestUtil;
+
+public class HeaderMenuAccessPage extends TestBase {
+	
+	@FindBy(xpath="//a[contains(text(),'Sales')]")
+	private WebElement headerSalesMenu;
+	
+	@FindBy(xpath="//span[@class='icon leads']")
+	private WebElement headerLeadButton;
+	
+	
+	public HeaderMenuAccessPage() {
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+	public LeadsPage redirectLeadPage() {
+		driver.manage().timeouts().implicitlyWait(TestUtil.implicit_wait, TimeUnit.SECONDS);
+		headerSalesMenu.click();
+		TestUtil.switchToActiveFrame();
+		headerLeadButton.click();
+		return new LeadsPage();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

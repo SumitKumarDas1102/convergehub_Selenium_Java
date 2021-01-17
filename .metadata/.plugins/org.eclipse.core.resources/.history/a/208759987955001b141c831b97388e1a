@@ -1,0 +1,42 @@
+package ConvergHub_Pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import ConvergHub_Base.TestBase;
+
+public class LefMenuAccessPage extends TestBase { 
+	
+	@FindBy(xpath="")
+	private WebElement frameName;
+
+	@FindBy(xpath="//li[@id='lbl_leads']")
+	private WebElement leadButton;
+	
+	
+	
+	
+	
+	
+	
+	public LefMenuAccessPage() {
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+	
+	public LeadsPage clickOnLeadFromLeftMenu() {
+		leadButton.click();
+		return new LeadsPage();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

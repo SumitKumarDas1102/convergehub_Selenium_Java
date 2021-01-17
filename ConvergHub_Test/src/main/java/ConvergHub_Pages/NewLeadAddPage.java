@@ -72,8 +72,13 @@ public class NewLeadAddPage extends TestBase{
 	@FindBy(xpath="//button[@class='button fresh_green save_button_from_module_add']")
 	private WebElement clickOnSave;
 	
+	@FindBy(xpath="//div[@id = 'left-panel_menu']//ul//li[@id='lbl_leads_module_name']")
+	private WebElement lftPanelLead;
+	
 	@FindBy(xpath="//span[@id='header_name_change']")
 	private WebElement createdLeadName;
+	
+	
 	
 	public NewLeadAddPage() {
 		PageFactory.initElements(driver, this);
@@ -129,6 +134,7 @@ public class NewLeadAddPage extends TestBase{
 		selectDay.sendKeys(day);
 		
 		clickOnSave.click();
+		lftPanelLead.click();
 	}
 	
 	

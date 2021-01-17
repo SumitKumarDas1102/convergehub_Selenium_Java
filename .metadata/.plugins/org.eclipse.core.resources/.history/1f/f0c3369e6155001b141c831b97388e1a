@@ -1,0 +1,20 @@
+<<<<<<< HEAD
+testBrowser = Chrome
+applicationURL = https://app01.convergehub.com/
+
+userName = prodvalidation_11jan_21@mailinator.com
+userPassword = Convergehub2020!
+
+chromeDriverPath = D:/QA_Work/POC/POC_Java/Selenium_ConvergHub/Driver/chromedriver_win32/chromedriver.exe
+
+=======
+testBrowser = Chrome
+applicationURL = https://app01.convergehub.com/
+
+userName = prodvalidation_11jan_21@mailinator.com
+userPassword = Convergehub2020!
+
+chromeDriverPath = https://github.com/SumitKumarDas1102/convergehub_Selenium_Java/tree/master/Driver/chromedriver_win32/chromedriver.exe
+
+>>>>>>> d0207cf94076e0a2f153b2ae3d597579053fadf2
+TESTDATA_SHEET_PATH = D:/QA_Work/POC/POC_Java/Selenium_ConvergHub/ConvergHub_Test/src/main/java/ConvergHub_TestData/ConvergHub_TestData.xlsx

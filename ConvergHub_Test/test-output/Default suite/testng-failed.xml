@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ConvergHub_TestCases.DashboardPageTest">
+      <class name="ConvergHub_TestCases.NewLeadAddPageTest">
         <methods>
           <include name="setUp"/>
-          <include name="IsLeadButtonWorkingTest"/>
+          <include name="IsUserAbleToFillGeneralData" invocation-numbers="0"/>
         </methods>
-      </class> <!-- ConvergHub_TestCases.DashboardPageTest -->
+      </class> <!-- ConvergHub_TestCases.NewLeadAddPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
